@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+    <style>
+       .box {
+            width:30%;
+            background-color: antiquewhite;
+            margin:auto; 
+            padding: 10px;
+            display: inline-block;
+
+        }
+
+        .thecontainer {
+           display: flex;
+        }
+
+        .thecontainer div{
+            padding: 10px;
+            width: 33%;
+            
+        }
+
+        .gridlayout{
+            display: grid;
+            grid-template-columns: 50% 50%  ;
+          
+        }
+
+        .gridlayout div{
+            padding: 5px;
+            
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+
+        .a{
+            background-color: #f4ecec;
+        }
+
+        .b{
+            background-color: #f7c1c1;
+        }
+
+        .c{
+            background-color: #98c2f9;
+        }
+
+        .d{
+            background-color: #f6bbec;
+        }
+    </style>
+</head>
+<body>
+    <h2>Block level element-div</h2>
+    <div class="box">
+        <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+
+    <div class="box">
+        <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+
+    <div class="box">
+        <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+ 
+    <!--flex layout module-->
+
+    <h1>flex layout [display:flex]</h1>
+    <div class="thecontainer">
+        <div style="background-color: #dac6c6;">
+            <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+
+    <div style="background-color: #b7b4b4;">
+        <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+
+    <div style="background-color: #f2ebeb;">
+
+        <h3>This is example of div element</h3>
+        <p>Block level elements always starts with new line and takes up full width</p>
+        <p>div and p are the block level elements</p>
+    </div>
+</div>
+
+
+<!--Grid container -->
+<h1>Grid layout module [display:grid]</h1>
+<div class="gridlayout">
+    <div class="a" >
+        <h3>Content 1</h3>
+    <p>Block level elements always starts with new line and takes up full width</p>
+    <p>div and p are the block level elements</p>
+</div>
+
+<div class="b"  >
+    <h3>Content 2</h3>
+    <p>Block level elements always starts with new line and takes up full width</p>
+    <p>div and p are the block level elements</p>
+</div>
+
+<div class="c"  >
+    <h3>Content 3</h3>
+<p>Block level elements always starts with new line and takes up full width</p>
+<p>div and p are the block level elements</p>
+</div>
+
+<div class="d" >
+<h3>content 4</h3>
+<p>Block level elements always starts with new line and takes up full width</p>
+<p>div and p are the block level elements</p>
+</div>
+ 
+</div>
+
+</body>
+</html>

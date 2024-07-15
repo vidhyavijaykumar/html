@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+<div class="container">
+    <form class="row g-3 needs-validation" novalidate>
+        
+            <div class="col-md-6 position-relative">
+                <label for="inputEmail" class="form-label">Enter Email Id</label>
+                <input type="email" class="form-control" id="inputEmail"  value="teena@gmail.com" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" required >                
+                <div class="invalid-feedback">
+                    Please Enter a password.
+                  </div>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <textarea class="form-control" id="inputAddress" placeholder="123, Maint street," required></textarea>
+                <div class="invalid-feedback">Enter address</div>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address</label>
+                <textarea class="form-control" id="inputAddress2" placeholder="Apartment,floor" required></textarea>
+                <div class="invalid-feedback">Address is required</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" required>
+                <div class="invalid-feedback">Please Enter City Name</div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select class="form-select" required>
+                    <option value="">State Names</option>
+                    <option  value="Tamil Nadu">Tamil Nadu</option>
+                    <option  value="Tamil Nadu">Kerala</option>
+                    <option  value="Tamil Nadu">Mumbai</option>
+                    <option  value="Tamil Nadu">Hydrabad</option>
+                </select>
+                <div class="invalid-feedback">Please Select State Name</div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Zip Code" required>
+                <div class="invalid-feedback">Please Enter Zip Code</div>
+            </div>
+
+            <div class="col-12">
+                <input type="checkbox" id="inputCheckBox" class="form-check-input" required>
+                <label for="inputCheckBox" class="form-check-label">Check me out</label>
+                <div class="invalid-feedback">Please check the box</div>
+            </div>
+
+            <!-- <div class="col-12">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div> -->
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+         
+    </form>
+</div>
+    
+</body>
+</html>
+
+<script type="text/javascript">
+    
+    (function () {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+     
+</script>
